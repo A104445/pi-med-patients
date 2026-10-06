@@ -26,8 +26,6 @@ A app tem de ser útil desde o primeiro dia, mesmo sem integrações: guardar um
 
 ### 2.2 Fora de âmbito (para já)
 
-- Diagnóstico ou recomendações clínicas automáticas: a app organiza e explica, não substitui o médico.
-- Marcação de consultas e pagamentos.
 - Visualizador DICOM completo e armazenamento de estudos de imagem pesados.
 - Integrações proprietárias com cada hospital, enquanto não houver acordos e APIs disponíveis.
 
