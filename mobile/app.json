@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Medgical Patients",
+    "slug": "medgical-patients",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "medgicalpatients",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "ai.medgical.patients",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "ai.medgical.patients",
+      "adaptiveIcon": {
+        "backgroundColor": "#093456",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFFFFF",
+          "image": "./assets/images/splash-logo.png",
+          "imageWidth": 180
+        }
+      ],
+      [
+        "expo-share-intent",
+        {
+          "iosActivationRules": "SUBQUERY (extensionItems, $extensionItem, SUBQUERY ($extensionItem.attachments, $attachment, ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO \"com.adobe.pdf\").@count >= 1).@count >= 1",
+          "iosShareExtensionName": "Medgical Patients Share",
+          "androidIntentFilters": [
+            "application/pdf"
+          ],
+          "androidMultiIntentFilters": [
+            "application/pdf"
+          ]
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
