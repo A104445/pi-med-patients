@@ -50,13 +50,13 @@ O RGPD estabelece os princípios gerais de recolha, tratamento, segurança e dir
 3. **Integridade e confidencialidade:** Implementar medidas técnicas adequadas para impedir acessos não autorizados, perdas ou alterações ilícitas.
 
 #### Direitos dos Titulares com Impacto Arquitetural Direto
-* **Direito ao Apagamento / "Esquecimento" (Artigo 17.º — UC17 / RF09):**  
+* **Direito ao Apagamento / "Esquecimento" (Artigo 17.º):**  
   * O utilizador pode eliminar a conta a qualquer momento.  
   * **Exigência técnica:** Eliminação em cascata imediata e verificada do utilizador, das credenciais/sessões, de todos os registos clínicos (`clinical_records`), ficheiros nos buckets S3/MinIO e das chaves de indexação vetorial.
-* **Direito à Portabilidade (Artigo 20.º — UC16 / RF125, RF128):**  
+* **Direito à Portabilidade (Artigo 20.º):**  
   * O paciente tem o direito de receber os seus dados num formato estruturado, de uso corrente e de leitura automática.  
   * **Exigência técnica:** Exportação completa num pacote JSON interoperável (**HL7 FHIR R4 Bundle**) e opcionalmente em PDF clínico consolidado.
-* **Direito de Acesso e Auditoria (Artigo 15.º — UC12 / RF14, RF124):**  
+* **Direito de Acesso e Auditoria (Artigo 15.º):**  
   * O titular tem o direito de saber com quem os seus dados foram partilhados e quem os consultou.  
   * **Exigência técnica:** Tabela de auditoria *append-only* (`audit_events`) que regista acessos do paciente e de médicos externos via links de partilha.
 
